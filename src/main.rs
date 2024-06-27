@@ -17,7 +17,6 @@ async fn main() {
 
     let github_client = GitHubClient::new(github_token);
 
-    // Fetch and compare followers and following
     match fetch_and_compare_followers(&github_client).await {
         Ok(not_following_back) => {
             print_not_following_back(&not_following_back);
@@ -47,7 +46,6 @@ async fn fetch_and_compare_followers(
     let following_set: HashSet<String> = following.iter().map(|user| user.login.clone()).collect();
     let followers_set: HashSet<String> = followers.iter().map(|user| user.login.clone()).collect();
 
-    // Identify users who don't follow back
     let not_following_back: Vec<String> = following_set
         .difference(&followers_set)
         .cloned()
