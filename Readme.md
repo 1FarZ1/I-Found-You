@@ -1,7 +1,7 @@
 
 ## I Found You
 
-- I found is A Cli made with rust that helps you see the people that you follow and doesnt follow you ,  offering huge performance and speed.
+- I found is A Cli made with rust that helps you see the people that you follow and doesnt follow you (unfollowers) ,  offering huge performance and speed.
 
 
 ## Demo
