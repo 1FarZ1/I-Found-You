@@ -8,7 +8,7 @@ use instagram_client::InstagramClient;
 use std::collections::HashSet;
 
 #[derive(Parser)]
-#[clap(name = "socialHelper", version = "1.0", author = "Your Name <your.email@example.com>", about = "A CLI tool to interact with GitHub or Instagram")]
+#[clap(name = "gitHelper", version = "1.0", author = "FarZ", about = "A CLI tool to Get Followers that dont follow you")]
 struct Cli {}
 
 enum Service {
