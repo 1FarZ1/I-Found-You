@@ -33,7 +33,7 @@ impl GitHubClient {
     }
 
     pub async fn fetch_following(&self) -> Result<Vec<User>, Error> {
-        self.fetch_users("following").await
+        self.fetch_users("following").await 
     }
 
     pub async fn fetch_followers(&self) -> Result<Vec<User>, Error> {
